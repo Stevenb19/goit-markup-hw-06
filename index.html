@@ -89,8 +89,58 @@
           Solicite Nuestro Servicio
         </button>
         <div class="backdrop" data-modal>
-          <div class="modal">
-            <button data-modal-close>cerrar</button>
+          <div class="container-modal">
+            <div class="modal">
+              <svg
+                data-modal-close
+                class="svg-close"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="15" cy="15" r="15" fill="white" />
+                <circle
+                  cx="15"
+                  cy="15"
+                  r="14.5"
+                  stroke="black"
+                  stroke-opacity="0.1"
+                />
+                <path
+                  d="M21 11.1079L19.8921 10L15.5 14.3921L11.1079 10L10 11.1079L14.3921 15.5L10 19.8921L11.1079 21L15.5 16.6079L19.8921 21L21 19.8921L16.6079 15.5L21 11.1079Z"
+                  fill="#AFB1B8"
+                />
+              </svg>
+            </div>
+            <h3 class="modal-title">
+              Deje sus datos, nos contactaremos con usted
+            </h3>
+            <form class="form-modal">
+              <label for="input-name"> Nombre </label>
+              <input
+                class="modal-form-imput"
+                type="text"
+                name="name"
+                id="input-name"
+              />
+              <label for="input-phone"> Teléfono </label>
+              <input
+                class="modal-form-imput"
+                type="number"
+                name="Phone"
+                id="input-name"
+              />
+              <label for="input-email"> E-mail </label>
+              <input
+                class="modal-form-imput"
+                type="email"
+                name="email"
+                id="input-email"
+              />
+            </form>
+            <button class="button-modal" type="submit">Enviar</button>
           </div>
         </div>
       </div>

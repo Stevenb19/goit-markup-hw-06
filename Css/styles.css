@@ -531,14 +531,66 @@ address {
     background-color: rgba(0, 0, 0, .5);
 }
 
-.modal {
-    background: white;
-    color: #fff;
-    position: fixed;
-    height: 550px;
-    width: 550px;
-    transition: all .5s;
-    translate: unset;
+.container-modal {
+
     margin-top: 250px;
     margin-left: 700px;
+}
+
+.modal {
+    height: 581px;
+    width: 528px;
+    color: #fff;
+    position: absolute;
+    transition: all .5s;
+    translate: unset;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.svg-close {
+    position: absolute;
+    top: 6.5px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.svg-close:hover>path {
+    fill: #2196f3;
+}
+
+.modal-title {
+    position: fixed;
+    font-size: 20px;
+    padding: 0%;
+    margin-top: 38.5px;
+    margin-left: 40px;
+    margin-right: 39px;
+}
+
+.modal-form-imput {
+    outline: none;
+    width: 448px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: var(--secondary-text-color);
+    display: flex;
+    padding-bottom: 4px;
+}
+
+.form-modal {
+    position: absolute;
+    margin-top: 73.5px;
+    margin-left: 40px;
+    display: block;
+}
+
+.button-modal {
+    position: absolute;
 }
